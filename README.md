@@ -2,7 +2,7 @@
 
 ## Sadrzaj projekta
 
-Ovde se nalazi projekat za predmeta Praktikum - Internet i veb tehnologije - Praktikum sistemi ePoslovanja 
+Ovde se nalazi projekat za predmeta Praktikum sistemi ePoslovanja 
 
 ## Struktura projekta
 
