@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `administrator` (
 
 /*!40000 ALTER TABLE `administrator` DISABLE KEYS */;
 INSERT INTO `administrator` (`administrator_id`, `username`, `password_hash`, `is_active`) VALUES
-	(1, 'mtair', '$2b$11$BlWgwJPoeXGfyZNOYwZfIOlwOpR.fMYBQDtxqDCYPZW8VSrZoU99O', 1);
+	(1, 'milan0304', '$2b$11$BlWgwJPoeXGfyZNOYwZfIOlwOpR.fMYBQDtxqDCYPZW8VSrZoU99O', 1);
 /*!40000 ALTER TABLE `administrator` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `article`;
@@ -42,11 +42,11 @@ CREATE TABLE IF NOT EXISTS `article` (
 
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
 INSERT INTO `article` (`article_id`, `created_at`, `title`, `excerpt`, `description`, `is_active`, `is_promoted`, `category_id`) VALUES
-	(16, '2021-05-19 17:10:35', 'HDD 1', 'Ovo je kratak opis diska...', 'Ovo je detaljan opis diska...   ', 1, 1, 5),
-	(17, '2021-05-19 17:11:36', 'MB 111', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\nDuis vulputate vestibulum pretium.', 'Maecenas fringilla lacus nec vehicula tempor. Mauris malesuada dui lorem, quis suscipit eros aliquet et. Pellentesque nunc orci, congue sit amet velit et, eleifend imperdiet urna. Sed at interdum lorem. Aliquam consectetur rutrum massa sed dignissim. Duis posuere, metus sed imperdiet ullamcorper, purus sem mollis tellus, quis euismod nibh lectus sit amet nunc. Aliquam erat volutpat. Sed diam ipsum, vulputate in ante ac, fringilla viverra urna. Aenean vulputate efficitur tempus. Etiam quis velit nec sapien feugiat semper a quis magna. Suspendisse cursus dapibus libero, vel suscipit ex.', 1, 1, 3),
-	(18, '2021-05-28 12:56:35', 'MB 11232', 'Ovo je kratak opis mp...', 'Ovo je detaljan opis mp...   ', 1, 1, 3),
-	(19, '2021-05-28 12:57:09', 'MB 536346', 'Ovo je kratak opis mp...', 'Ovo je detaljan opis mp...   ', 1, 1, 3),
-	(20, '2021-05-28 12:57:31', 'MB 54rggrgdf', 'Ovo je kratak opis mp...', 'Ovo je detaljan opis mp...   ', 1, 1, 3);
+	(16, '2021-05-19 20:10:35', 'Usluga 1', 'Ovo je usluga 1', 'Usluga 1 vam omogucava...', 1, 1, 1),
+	(17, '2021-05-19 13:11:36', 'Usluga 2', 'Ovo je usluga 2', 'Usluga 2 vam omogucava...', 1, 1, 2),
+	(18, '2021-05-28 18:56:35', 'Usluga 3', 'Ovo je usluga 3', 'Usluga 3 vam omogucava...', 1, 1, 3),
+	(19, '2021-05-28 11:57:09', 'Usluga 4', 'Ovo je usluga 4', 'Usluga 4 vam omogucava...', 1, 1, 4),
+	(20, '2021-05-28 22:57:31', 'Usluga 5', 'Ovo je usluga 5', 'Usluga 5 vam omogucava...', 1, 1, 5);
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `article_feature`;
@@ -64,17 +64,17 @@ CREATE TABLE IF NOT EXISTS `article_feature` (
 
 /*!40000 ALTER TABLE `article_feature` DISABLE KEYS */;
 INSERT INTO `article_feature` (`article_feature_id`, `value`, `article_id`, `feature_id`) VALUES
-	(48, '1TB', 16, 1),
-	(49, '3.5"', 16, 2),
-	(50, 'SATA 3.0', 16, 3),
-	(51, 'SAGA', 17, 4),
-	(52, 'MB44', 17, 5),
-	(53, 'SAGA', 18, 4),
-	(54, 'MB44', 18, 5),
-	(55, 'SAGA', 19, 4),
-	(56, 'MB432', 19, 5),
-	(57, 'SAGA', 20, 4),
-	(58, 'MB666', 20, 5);
+	(48, 'ABC', 16, 1),
+	(49, 'ABC212', 16, 2),
+	(50, 'absads', 16, 3),
+	(51, 'somensknak', 17, 4),
+	(52, 'hasda', 17, 5),
+	(53, 'neka usluga', 18, 4),
+	(54, 'neka druga usluga', 18, 5),
+	(55, 'nova usluga', 19, 4),
+	(56, 'novija', 19, 5),
+	(57, 'neka nova usl', 20, 4),
+	(58, 'najnovija', 20, 5);
 /*!40000 ALTER TABLE `article_feature` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `article_price`;
@@ -90,11 +90,11 @@ CREATE TABLE IF NOT EXISTS `article_price` (
 
 /*!40000 ALTER TABLE `article_price` DISABLE KEYS */;
 INSERT INTO `article_price` (`article_price_id`, `created_at`, `price`, `article_id`) VALUES
-	(14, '2021-05-19 17:10:35', 59.90, 16),
-	(15, '2021-05-19 17:11:36', 39.90, 17),
-	(16, '2021-05-28 12:56:35', 49.90, 18),
-	(17, '2021-05-28 12:57:09', 19.91, 19),
-	(18, '2021-05-28 12:57:31', 99.99, 20);
+	(14, '2021-05-19 17:10:35', 20.88, 16),
+	(15, '2021-05-19 17:11:36', 59.90, 17),
+	(16, '2021-05-28 12:56:35', 9.90, 18),
+	(17, '2021-05-28 12:57:09', 30.41, 19),
+	(18, '2021-05-28 12:57:31', 89.25, 20);
 /*!40000 ALTER TABLE `article_price` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `cart`;
@@ -118,7 +118,6 @@ INSERT INTO `cart` (`cart_id`, `created_at`, `user_id`) VALUES
 DROP TABLE IF EXISTS `cart_article`;
 CREATE TABLE IF NOT EXISTS `cart_article` (
   `cart_article_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `quantity` int(10) unsigned NOT NULL,
   `cart_id` int(10) unsigned NOT NULL,
   `article_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`cart_article_id`),
@@ -129,19 +128,18 @@ CREATE TABLE IF NOT EXISTS `cart_article` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*!40000 ALTER TABLE `cart_article` DISABLE KEYS */;
-INSERT INTO `cart_article` (`cart_article_id`, `quantity`, `cart_id`, `article_id`) VALUES
-	(1, 5, 7, 16),
-	(3, 1, 7, 17),
-	(5, 1, 8, 18),
-	(9, 2, 8, 17),
-	(10, 2, 9, 17);
+INSERT INTO `cart_article` (`cart_article_id`,`cart_id`, `article_id`) VALUES
+	(1,7, 16),
+	(3,7, 17),
+	(5, 8, 18),
+	(9, 8, 17),
+	(10, 9, 17);
 /*!40000 ALTER TABLE `cart_article` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE IF NOT EXISTS `category` (
   `category_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_path` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `parent__category_id` int(10) unsigned DEFAULT NULL,
   PRIMARY KEY (`category_id`),
   UNIQUE KEY `uq_category_name` (`name`),
@@ -150,18 +148,14 @@ CREATE TABLE IF NOT EXISTS `category` (
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
-INSERT INTO `category` (`category_id`, `name`, `image_path`, `parent__category_id`) VALUES
-	(1, 'Računarske komponente', '/static/categories/pc.png', NULL),
-	(2, 'Računarski softver', '/static/categories/cd.png', NULL),
-	(3, 'Matične poloče', '/static/categories/mb.jpg', 1),
-	(4, 'Hard diskovi', '/static/categories/hdd.jpg', 1),
-	(5, 'Magnetni diskovi', '/static/categories/hdd-classic.png', 4),
-	(6, 'SSD diskovi', '/static/categories/hdd-ssd.png', 4),
-	(7, 'M2 diskovi', '/static/categories/hdd-m2.png', 4),
-	(8, 'Aplikacije', '/static/categories/apps.png', 2),
-	(9, 'Video igre', '/static/categories/games.png', 2),
-	(10, 'Operativni sistemi', '/static/categories/os.png', 2),
-	(15, 'Video igre za konzole', 'http://slike.com/cat/konzole.png', 9);
+INSERT INTO `category` (`category_id`, `name`,`parent__category_id`) VALUES
+	(1, 'Nova usluga', NULL),
+  (2, 'Nova usluga 2', NULL),
+  (3, 'Nova usluga 3', NULL),
+  (4, 'Nova usluga 4', NULL),
+  (5, 'Nova usluga 5', NULL),
+  (6, 'Nova usluga 6', NULL),
+  (7, 'Nova usluga 7', NULL);
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `feature`;
@@ -177,14 +171,11 @@ CREATE TABLE IF NOT EXISTS `feature` (
 
 /*!40000 ALTER TABLE `feature` DISABLE KEYS */;
 INSERT INTO `feature` (`feature_id`, `name`, `category_id`) VALUES
-	(2, 'Dimenzije', 4),
-	(8, 'Godina izdanja', 2),
-	(1, 'Kapacitet (GB)', 4),
-	(5, 'Model', 1),
-	(7, 'Produkciona kuća', 2),
-	(4, 'Proizvođač', 1),
-	(6, 'Tehnologija', 6),
-	(3, 'Tip konektora', 4);
+	(2, 'Ponuda', 4),
+	(8, 'Cena', 2),
+	(1, 'Izvodjac', 3),
+	(5, 'Duzina trajanja', 1),
+	(7, 'Vrsta usluge', 7),
 /*!40000 ALTER TABLE `feature` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `order`;
@@ -200,36 +191,11 @@ CREATE TABLE IF NOT EXISTS `order` (
 
 /*!40000 ALTER TABLE `order` DISABLE KEYS */;
 INSERT INTO `order` (`order_id`, `created_at`, `status`, `cart_id`) VALUES
-	(7, '2021-05-24 16:26:16', 'completed', 7),
-	(8, '2021-06-02 17:20:21', 'pending', 8),
-	(9, '2021-06-02 17:22:44', 'pending', 9);
+	(7, '2021-05-24 16:26:16', 'Odradjena usluga!', 7),
+	(8, '2021-06-02 17:20:21', 'Ceka se usluga!', 8),
+	(9, '2021-06-02 17:22:44', 'Usluga je u toku!', 9);
 /*!40000 ALTER TABLE `order` ENABLE KEYS */;
 
-DROP TABLE IF EXISTS `photo`;
-CREATE TABLE IF NOT EXISTS `photo` (
-  `photo_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `image_path` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `article_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`photo_id`),
-  KEY `fk_photo_article_id` (`article_id`),
-  CONSTRAINT `fk_photo_article_id` FOREIGN KEY (`article_id`) REFERENCES `article` (`article_id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-/*!40000 ALTER TABLE `photo` DISABLE KEYS */;
-INSERT INTO `photo` (`photo_id`, `image_path`, `article_id`) VALUES
-	(22, 'static/uploads/2021/05/4a287f88-7e5e-424e-b2e6-e7e1fd42b3da-denny-muller-1qL31aacAPA-unsplash.jpg', 16),
-	(23, 'static/uploads/2021/05/96c789c0-f661-424d-8374-f3a847543459-frank-r-ShHkXuZdpTw-unsplash.jpg', 16),
-	(25, 'static/uploads/2021/05/b1de3f1f-b70f-46cc-a566-023fa7dc3d56-alexandre-debieve-FO7JIlwjOtU-unsplash.jpg', 17),
-	(26, 'static/uploads/2021/05/cb1727af-365f-4b33-b81a-ef03cfe57cc4-cooler-933691_1280.jpg', 17),
-	(27, 'static/uploads/2021/05/16e50e93-9e11-4c55-b196-d3a08de20bc4-cyber-2377718_1280.jpg', 17),
-	(28, 'static/uploads/2021/05/bb267a51-8221-454f-83c3-8f5389c43a96-anas-alshanti-feXpdV001o4-unsplash.jpg', 16),
-	(29, 'static/uploads/2021/05/7565e626-3a41-4caa-a065-17c6920b7aba-dries-augustyns-yiCOCqZ-ig4-unsplash.jpg', 16),
-	(30, 'static/uploads/2021/05/aff9bee8-8ff7-4c56-9c72-888477eb8b5f-denny-muller-4u6TUbreFc0-unsplash.jpg', 16),
-	(31, 'static/uploads/2021/05/a3549188-687d-4256-9659-171852b2d184-denny-muller-1qL31aacAPA-unsplash.jpg', 16),
-	(32, 'static/uploads/2021/05/cedefbf4-3bd3-41e9-8647-bfb2bc369f45-mb001.jpg', 18),
-	(33, 'static/uploads/2021/05/adcd2e13-500e-44de-8212-b5758dbe5b5f-mb002.png', 19),
-	(34, 'static/uploads/2021/05/810e2d4b-fccf-43d9-bc5e-8efdd21ed943-mb003j.peg', 20);
-/*!40000 ALTER TABLE `photo` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
@@ -249,10 +215,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`user_id`, `created_at`, `email`, `password_hash`, `password_reset_code`, `forename`, `surname`, `phone_number`, `postal_address`, `is_active`) VALUES
-	(6, '2021-05-21 15:47:55', 'mtair@singidunum.ac.rs', '$2b$11$BlWgwJPoeXGfyZNOYwZfIOlwOpR.fMYBQDtxqDCYPZW8VSrZoU99O', NULL, 'Milan', 'Tair', '+381113093267', 'Danijelova 32, 11010 beograd, R. Srbija', 1),
-	(8, '2021-05-31 15:15:10', 'pperic@example.com', '$2b$11$9118C01XZalghVFdu2AKVerERAEltL9BG0RbwO/E5epn7slNPDa9m', NULL, 'Pera', 'Peric', '+381113093263', 'Danijelova 32, 11010 beograd, R. Srbija', 1),
-	(11, '2021-05-31 15:28:43', 'pperic@example.org', '$2b$11$bawD24EoVo3XDipnSgV8iu8ZtFRFu9o5EAEMD4DMOklNpKA25oMdW', NULL, 'Pera', 'Peric', '+381113094094', 'Neka adresa korisnika', 1),
-	(13, '2021-05-31 15:29:03', 'pperic@example.co.uk', '$2b$11$/dHK0dVaE8gnzoshePAHe.sn7.obOqgjXJXWltYFNELPCoD2VBzFG', NULL, 'Pera', 'Peric', '+381113094094', 'Neka adresa korisnika 10', 1);
+	(6, '2021-05-21 15:47:55', 'milandjordjevic@gmail.com', '$2b$11$BlWgwJPoeXGfyZNOYwZfIOlwOpR.fMYBQDtxqDCYPZW8VSrZoU99O', NULL, 'Milan', 'Djordjevic', '+3816532134', 'BSF 3, 11253 beograd,Srbija', 1),
+	(8, '2021-05-31 15:15:10', 'markko.nikic@yahoo.com', '$2b$11$9118C01XZalghVFdu2AKVerERAEltL9BG0RbwO/E5epn7slNPDa9m', NULL, 'Marko', 'Nikic', '+3829786532', 'Niksicka 18,21231 niksic, R. CrnaGora', 1);
+
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
