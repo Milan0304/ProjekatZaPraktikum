@@ -1,4 +1,4 @@
-# Projekat iz predmeta Praktikum Internet i Veb tehnologije - Praktikum sistemi ePoslovanja
+# Projekat iz predmeta Praktikum sistemi ePoslovanja
 
 ## Sadrzaj projekta
 
