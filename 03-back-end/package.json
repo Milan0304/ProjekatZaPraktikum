@@ -1,5 +1,5 @@
 {
-  "name": "piivt-api",
+  "name": "projekatZaPraktikum",
   "version": "0.1.0",
   "description": "",
   "main": "dist/main.js",
@@ -9,7 +9,7 @@
     "start": "npm run build && node --trace-warnings ./dist/main.js",
     "start:dev": "ts-node-dev --trace-warnings --respawn -- src/main.ts"
   },
-  "author": "Milan Tair <milan.tair@gmail.com>",
+  "author": "Milan Djordjevic",
   "license": "ISC",
   "dependencies": {
     "ajv": "^8.3.0",
