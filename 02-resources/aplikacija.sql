@@ -21,7 +21,8 @@ CREATE TABLE IF NOT EXISTS `administrator` (
 
 /*!40000 ALTER TABLE `administrator` DISABLE KEYS */;
 INSERT INTO `administrator` (`administrator_id`, `username`, `password_hash`, `is_active`) VALUES
-	(1, 'milan0304', '$2b$11$BlWgwJPoeXGfyZNOYwZfIOlwOpR.fMYBQDtxqDCYPZW8VSrZoU99O', 1);
+	(1, 'milan0304', '$2b$11$BlWgwJPoeXGfyZNOYwZfIOlwOpR.fMYBQDtxqDCYPZW8VSrZoU99O', 1),
+	(2, 'nikola1920', '$3r$33$AIkdlKIneFDjkMROPqTkQotbIlD.gJTRVEheaLECFHY6ZOeAuT551', 1);
 /*!40000 ALTER TABLE `administrator` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `article`;
@@ -42,11 +43,12 @@ CREATE TABLE IF NOT EXISTS `article` (
 
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
 INSERT INTO `article` (`article_id`, `created_at`, `title`, `excerpt`, `description`, `is_active`, `is_promoted`, `category_id`) VALUES
-	(16, '2021-05-19 20:10:35', 'Usluga 1', 'Ovo je usluga 1', 'Usluga 1 vam omogucava...', 1, 1, 1),
+	(16, '2021-01-19 20:10:35', 'Usluga 1', 'Ovo je usluga 1', 'Usluga 1 vam omogucava...', 1, 1, 1),
 	(17, '2021-05-19 13:11:36', 'Usluga 2', 'Ovo je usluga 2', 'Usluga 2 vam omogucava...', 1, 1, 2),
-	(18, '2021-05-28 18:56:35', 'Usluga 3', 'Ovo je usluga 3', 'Usluga 3 vam omogucava...', 1, 1, 3),
+	(18, '2021-08-28 18:56:35', 'Usluga 3', 'Ovo je usluga 3', 'Usluga 3 vam omogucava...', 1, 1, 3),
+	(18, '2021-07-28 18:56:35', 'Usluga 12', 'Ovo je usluga 12', 'Usluga 12 vam omogucava...', 1, 1, 3),
 	(19, '2021-05-28 11:57:09', 'Usluga 4', 'Ovo je usluga 4', 'Usluga 4 vam omogucava...', 1, 1, 4),
-	(20, '2021-05-28 22:57:31', 'Usluga 5', 'Ovo je usluga 5', 'Usluga 5 vam omogucava...', 1, 1, 5);
+	(20, '2021-03-28 22:57:31', 'Usluga 5', 'Ovo je usluga 5', 'Usluga 5 vam omogucava...', 1, 1, 5);
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 
 DROP TABLE IF EXISTS `article_feature`;
